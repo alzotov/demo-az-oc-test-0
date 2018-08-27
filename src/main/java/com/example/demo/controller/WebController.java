@@ -9,10 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WebController {
 
-    @RequestMapping("/hello")
+/*    @RequestMapping("/hello")
     public Map<String, String> getCommitId() {
         Map<String, String> result = new HashMap<>();
         result.put("msg","Hello, World");
         return result;
+    }*/
+
+    @RequestMapping("/hello")
+    public String getCommitId() {
+        return "Hello, World";
     }
 }
