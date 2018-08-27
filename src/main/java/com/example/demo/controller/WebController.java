@@ -8,6 +8,6 @@ public class WebController {
 
     @RequestMapping("/hello")
     public String getCommitId() {
-        return "Hello, World";
+        return "Hello, World!";
     }
 }
